@@ -1,0 +1,12 @@
+{
+    "testFiles": "**/**/features/**/*.feature",
+    "viewportWidth": 1920,
+	"viewportHeight": 1080,
+	"retries": {
+		"runMode": 2,
+		"openMode": 0
+	},
+    "watchForFileChanges": false,
+    "defaultCommandTimeout": 20000,
+    "execTimeout": 40000
+}
