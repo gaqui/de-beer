@@ -5,15 +5,15 @@ class Homepage {
     open(region){
         switch (region.toLowerCase()) {
             case 'italy':
-                cy.visit(URL_ENDPOINT.ITALY);
+                cy.visit(`${URL_ENDPOINT.ITALY}/home`);
                 break;
 
             case 'france':
-                cy.visit(URL_ENDPOINT.FRANCE);
+                cy.visit(`${URL_ENDPOINT.FRANCE}/home`);
                 break;
         
             default:
-                cy.visit(URL_ENDPOINT.UNITED_KINGDOM);
+                cy.visit(`${URL_ENDPOINT.UNITED_KINGDOM}/home`);
                 break;
         }
     }
