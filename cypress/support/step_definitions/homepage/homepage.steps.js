@@ -6,9 +6,8 @@ Given('a user from one of the {string}', (region) => {
 	Home.open(region);
 });
 
-When('the user visits the {string} store front', (region) => {
+When('the user visits the {string} store front', () => {
     Home.acceptAllCookies();
-    // Home.closeSubscribeModal(region);
 });
 
 Then('they should be able to view the content related to the {string}', (region) => {
