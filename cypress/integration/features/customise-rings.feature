@@ -1,4 +1,4 @@
-Feature: View Content base on region
+Feature: Customise and Purchase a Ring
 
     As a user, 
     from each of the different market regions, 
