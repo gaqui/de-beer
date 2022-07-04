@@ -17,7 +17,8 @@ Then('I should be able to filter the product by all available filters:', (dataTa
 });
 
 Then('I should be be able to personalise the ring on and add it to the shopping bag', () => {
-    Ring.selectSize();
+    // hardcoding the ring size to 45, for future improvement will need to add tests to check all ring size available
+    Ring.selectSize('45');
     cy.contains('span', 'Estimated delivery').should('exist');
     Ring.addToBag();
     cy.contains('span', 'Secure Checkout').should('exist');

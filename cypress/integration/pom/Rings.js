@@ -26,10 +26,10 @@ class Rings{
         cy.get(HTML_ELEMENT.PRODUCT_VIEW_LIST).find(HTML_ELEMENT.PRODUCT).eq(0).click();
     }
 
-    selectSize(){
+    selectSize(size){
         // Adding {force: true as there is a bug in the UI where the pop-element is on top of the other elements}
         // will need to investigate further
-        cy.get(HTML_ELEMENT.PRODUCT_INFO).find(`${HTML_ELEMENT.CONTAINER_GRID}`).contains('div','45').click({force: true});
+        cy.get(HTML_ELEMENT.PRODUCT_INFO).find(`${HTML_ELEMENT.CONTAINER_GRID}`).contains('div', size).click({force: true});
     }
 
     addToBag(){
