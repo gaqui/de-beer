@@ -1,14 +1,13 @@
-import { And, Given, Then, When } from 'cypress-cucumber-preprocessor/steps';
-import Homepage from '../../../integration/pom/Homepage';
+import { Given, Then, When } from 'cypress-cucumber-preprocessor/steps';
+import Home from '../../../integration/pom/Home';
 import { HTML_ELEMENT } from '../../../integration/utils/testids/testids';
 
 Given('a user from one of the {string}', (region) => {
-	Homepage.open(region);
+	Home.open(region);
 });
 
-When('the user visits the {string} store front', (region) => {
-	Homepage.acceptAllCookies();
-    Homepage.closeSubscribeModal(region);
+When('the user visits the {string} store front', () => {
+    Home.acceptAllCookies();
 });
 
 Then('they should be able to view the content related to the {string}', (region) => {

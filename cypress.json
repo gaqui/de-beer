@@ -3,10 +3,11 @@
     "viewportWidth": 1920,
 	"viewportHeight": 1080,
 	"retries": {
-		"runMode": 2,
-		"openMode": 0
+		"runMode": 1,
+		"openMode": 1
 	},
     "watchForFileChanges": false,
     "defaultCommandTimeout": 20000,
-    "execTimeout": 40000
+    "execTimeout": 40000,
+    "numTestsKeptInMemory": 0
 }
